@@ -26,5 +26,5 @@ jobs:
       run:  |
         cd ..
         sudo apt-get update
-        docker build -t jap-djangoj . 
+        docker image build -t jap-djangoj . 
      # run: docker push japanjot15/djangostart:japppppppppp
