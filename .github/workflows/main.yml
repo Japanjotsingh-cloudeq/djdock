@@ -12,6 +12,9 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
 
     
 
@@ -24,7 +27,6 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: run command 
       run:  |
-        cd ..
         sudo apt-get update
         docker image build -t jap-djangoj . 
      # run: docker push japanjot15/djangostart:japppppppppp
