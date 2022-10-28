@@ -24,6 +24,6 @@ jobs:
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: run command 
       run:  |
-        cd dj-docker
+        cd ..
         docker build -t jap-djangoj . 
      # run: docker push japanjot15/djangostart:japppppppppp
