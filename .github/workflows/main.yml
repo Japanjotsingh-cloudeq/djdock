@@ -30,7 +30,7 @@ jobs:
     - uses: addnab/docker-run-action@v3
       with:
         image: japanjot15/app1
-        run: docker run -d -p8000:8000 
+        run: docker run -d -p8000:8000 japanjot15/app1
     
     
     
