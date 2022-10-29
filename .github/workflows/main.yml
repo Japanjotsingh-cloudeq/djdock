@@ -30,10 +30,9 @@ jobs:
     - uses: addnab/docker-run-action@v3
       with:
         image: japanjot15/app1
-        run: |
-          echo hell
-          docker ps 
-    
+        run: echo hell o 
+    - name: docker ps 
+      run: docker ps
     
     
     
