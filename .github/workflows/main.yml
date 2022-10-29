@@ -32,7 +32,7 @@ jobs:
         image: japanjot15/app1
         run: echo hell o 
     - name: docker ps 
-      run: docker ps
+      run: docker ps -a
     
     
     
