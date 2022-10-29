@@ -27,6 +27,11 @@ jobs:
       with:
         push: true
         tags: japanjot15/app1:latest
+    - uses: addnab/docker-run-action@v3
+      with:
+        image: japanjot15/app1
+        run: echo "hello world"
+    
     
     
     
