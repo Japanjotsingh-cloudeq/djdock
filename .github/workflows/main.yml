@@ -23,5 +23,5 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_PASSWORD }}
     - name: run command 
-      run:  docker build -t jap . 
+      run:  docker build -t japanjot15/japimage:v1 . 
      # run: docker push japanjot15/djangostart:japppppppppp
