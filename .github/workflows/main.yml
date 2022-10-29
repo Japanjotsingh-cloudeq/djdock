@@ -27,10 +27,12 @@ jobs:
       with:
         push: true
         tags: japanjot15/app1:latest
-    - uses: addnab/docker-run-action@v3
-      with:
-        image: japanjot15/app1
-        run: echo hell o 
+    # - uses: addnab/docker-run-action@v3
+    #   with:
+    #     image: japanjot15/app1
+    #     run: echo hell o 
+    - name: docker run 
+      run: docker run -d -p8001:8000 japanjot15/app1
     - name: docker ps 
       run: docker ps -a
     
